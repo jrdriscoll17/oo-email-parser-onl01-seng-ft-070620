@@ -10,14 +10,15 @@ class EmailAddressParser
   end
 
   def parse
-    emails_array = emails.split(/, | /)
-    parsed_emails = []
-
-    emails_array.each do |email|
-      if !parsed_emails.include?(email)
-        parsed_emails << email
-      end
-    end
-    parsed_emails
+    # emails_array = 
+    emails.split(/, | /).uniq
+    # parsed_emails = []
+    #
+    # emails_array.each do |email|
+    #   if !parsed_emails.include?(email)
+    #     parsed_emails << email
+    #   end
+    # end
+    # parsed_emails
   end
 end
