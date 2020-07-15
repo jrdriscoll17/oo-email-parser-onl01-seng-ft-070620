@@ -24,6 +24,4 @@ class EmailAddressParser
     end
     parsed_emails
   end
-
-  parse("john@doe.com, person1@somewhere.org, person2@somewhere.org, person3@somewhere.org")
 end
